@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://daneden.github.io/animate.css/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>UtilAPI // Innovative API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, minimal-ui">
+
+  <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+  <link rel="dns-prefetch" href="http://code.jquery.com/">
+
+  <link href="./Animate_files/css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="./Animate_files/animate.min.css">
+  <link rel="stylesheet" href="./Animate_files/style.css">
+<style type="text/css"></style></head>
+<body>
+<header class="site__header island">
+  <div class="wrap">
+   <span id="animationSandbox" style="display: block;"><h1 class="site__title mega">UtilAPI</h1></span>
+    <span class="beta subhead">Innovative Bukkit API</span>
+  </div>
+</header><!-- /.site__header -->
+
+    <hr>
+    <p class="meta"><a href="http://download943.mediafire.com/4qxcpobx7ahg/dpmppvit50iybd8/UtilAPI.jar" download="animate.css">Download 	UtilAPI</a> thanks to _UltimatuM_</p>
+    <p><small>Another website from <a href="http://jackearsman.com/">Jack Earsman</a>.</small></p>
+  </div>
+</main><!-- /.site__content -->
+
+<script src="./Animate_files/jquery-1.10.2.min.js"></script>
+<script>
+  function testAnim(x) {
+    $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+  };
+
+  $(document).ready(function(){
+    $('.js--triggerAnimation').click(function(e){
+      e.preventDefault();
+      var anim = $('.js--animations').val();
+      testAnim(anim);
+    });
+
+    $('.js--animations').change(function(){
+      var anim = $(this).val();
+      testAnim(anim);
+    });
+  });
+
+</script>
+
+
+
+</body></html>
